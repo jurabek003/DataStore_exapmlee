@@ -1,5 +1,3 @@
-@file:OptIn(ExperimentalAnimationApi::class)
-
 package uz.turgunboyevjurabek.datastoreexapmlee
 
 import androidx.compose.animation.*

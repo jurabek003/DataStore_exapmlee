@@ -13,7 +13,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 @Composable
 fun CounterScreen(viewModel: CounterViewModel) {
@@ -24,7 +23,8 @@ fun CounterScreen(viewModel: CounterViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Counter: $counter", fontSize = 24.sp)
+//        Text(text = "Counter: $counter", fontSize = 24.sp)
+        AnimatedCounter(count = counter)
 
         Spacer(modifier = Modifier.height(16.dp))
 
